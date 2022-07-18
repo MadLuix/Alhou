@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang='pt'>
+    <head><title>Lalps</title>
+    <link rel="stylesheet" href="design.css">
+    <script>
+        function bgchng(){
+            if (document.getElementById('btn').value == "dia"){
+                document.getElementById('bod').style.backgroundImage = "url(bg.png)";
+                document.getElementById('bod').style.color = "#fff";
+                document.getElementById('f').style.backgroundColor = "#0000001a";
+                document.getElementById('btn').value = "noite";
+                document.getElementById('steam2').style.visibility = 'visible';
+            }else{
+                document.getElementById('bod').style.backgroundImage = "url(bg1.png)";
+                document.getElementById('bod').style.color = "#000";
+                document.getElementById('f').style.backgroundColor = "#e094ae";
+                document.getElementById('btn').value = "dia";
+                document.getElementById('steam2').style.visibility = 'hidden';
+            }
+            
+        }
+    </script>
+</head>
+    
+<body id="bod">
+
+    <main id="m">
+      <div class="logo">
+          <button id="btn" onclick="bgchng()" value="dia"><img src="gatinho.gif" alt="gato"></button>
+      </div>
+        <h1 class="eu">ALHOU</h1>
+        <h2 class="headline">meu coração por ti bate como caroço de abacate :3</h2>
+        <a href="https://steamcommunity.com/id/lalps/" style="text-decoration: none">
+            <b id="steam">Steam</b>
+        </a>
+        
+        <a href="https://steamcommunity.com/id/slenderbrx/" style="text-decoration: none">
+            <b id="steam2">Steam</b>
+        </a>
+        
+    </main>
+    <footer id="f">
+        Lalps @2020 &copy; com uma pitadinha de luix
+    </footer>   
+</body>
+</html>
